@@ -1,5 +1,9 @@
 # Personal Website
 
+## TODO:
+
+- [ ] Add a news seperate page, like blogs. 
+
 ## Run in docker
 
 > Assume in starting docker with `jam-dk` and set up x-server correctly
