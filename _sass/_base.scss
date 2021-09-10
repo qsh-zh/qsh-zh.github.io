@@ -52,6 +52,7 @@ blockquote {
 
 .profile {
   margin-left: 1rem;
+  margin-right: 1rem;
   width: 100%;
 
   .address {
@@ -75,6 +76,7 @@ blockquote {
 }
 
 .post-description {
+  margin-top: 2rem;
   margin-bottom: 2rem;
   font-size: 0.875rem;
   a {
@@ -94,6 +96,7 @@ blockquote {
   border-bottom: 1px solid $grey-color-light;
   background-color: var(--global-bg-color);
   opacity: 0.95;
+//   padding: .2rem 0;
 }
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
@@ -117,10 +120,18 @@ blockquote {
       text-decoration: none;
     }
   }
+  font-weight: 400;
   .navbar-brand {
+    font-size: 1.8rem;
+    padding: .2rem 0;
+    font-weight: 600;
     color: var(--global-text-color);
   }
   .navbar-nav .nav-item .nav-link {
+    padding: .2rem 0 .2rem .8rem !important;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: capitalize;
     color: var(--global-text-color);
     &:hover {
       color: var(--global-hover-color);
@@ -189,11 +200,33 @@ blockquote {
 
 
 // News
+.news h2 {
+    font-weight: 500 !important;
+    font-size: 2.0rem;
+    margin-bottom: .5rem; 
+}
 
 .news table td {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 350 !important;
   color: var(--global-text-color);
 }
+
+.news {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; }
+    .news table {
+      border-spacing: 0rem; }
+      .news table td p {
+        margin-bottom: 0.3rem; }
+    .news table.table-sm th,
+    .news table.table-sm td {
+      padding: 0 0.5rem 0 0; }
+      .news table.table-sm th p,
+      .news table.table-sm td p {
+        font-size: 1.0rem;
+        margin-bottom: 0.4rem; }
+  
 
 .news table th {
   color: var(--global-text-color);
@@ -202,18 +235,18 @@ blockquote {
 // Social (bottom)
 
 .social {
+  padding: 3rem 0;
   text-align: center;
+  background-color: #222222;
   .contact-icons {
-    font-size: 4rem;
+    font-size: 1rem;
+    h4 {
+        color: #b3b3b3;
+    }
     a {
-      i::before {
-        color: var(--global-text-color);
-        -webkit-transition: all 0.2s ease-in-out;
-      }
+      color: white;
       &:hover {
-        i::before {
-          color: var(--global-theme-color);
-        }
+          color: #b81c1c;
       }
     }
   }

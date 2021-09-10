@@ -3,9 +3,12 @@
  ******************************************************************************/
 
  body {
+   font-family: Avenir, Tahoma, "Open Sans", sans-serif;
    padding-bottom: 70px;
+   font-weight: 200;
    color: var(--global-text-color);
    background-color: var(--global-bg-color);
+   font-size: 1.00rem;
  }
 
  body.fixed-top-nav {
