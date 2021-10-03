@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 description: <span style="color:blue;font-weight:bold">#</span> denotes equal contribution.
-years: [2020]
+years: [2021, 2020]
 nav: true
 ---
 
@@ -14,9 +14,7 @@ An up-to-date list is available on [Google Scholar](https://scholar.google.com/c
 
 <div class="publications">
 <h2 class="year">""</h2>
-{% for y in page.years %}
-  {% bibliography -f preprint %}
-{% endfor %}
+{% bibliography -f preprint %}
 
 </div>
 
