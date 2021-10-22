@@ -30,12 +30,17 @@ layout: default
     </div>
 
     {% if page.news %}
+      <hr>
       {% include news.html %}
     {% endif %}
 
     {% if page.selected_papers %}
       {% include selected_papers.html %}
     {% endif %}
+    
+    <hr>
+    <p><strong>Acknowledgements</strong>: based on the <a href="https://github.com/alshedivat/al-folio">al-folio</a> template by <a href="https://www.cs.cmu.edu/~mshediva/">Maruan Al-Shedivat</a>.</p>
+
 
   </article>
 

@@ -17,7 +17,7 @@ social: false   # includes social icons at the bottom of the page
 
 I am a third-year Robotics Ph.D. student at Georgia Institute of Technology [IRIM](https://research.gatech.edu/robotics). I am fortunately advised by professor [Yongxin Chen](https://yongxin.ae.gatech.edu/). 
 
-Previously, I received my bachelar in 2019 from [Shanghai Jiaotong University](https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University), where I taught [robots](#) to play soccer during undergraduate.
+Previously, I received my bachelar in 2019 from [Shanghai Jiaotong University](https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University), where I taught robots to [play soccer](https://www.youtube.com/watch?v=5_8HpaHlzyE&t=18s). My teammates have a promising robotics [startup](https://www.seer-group.com/).
 
 My research interests include: 
 - Density models: learning and sampling.
