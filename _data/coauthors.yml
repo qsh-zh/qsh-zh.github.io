@@ -18,6 +18,11 @@
   - firstname: ["Nathan", "N."]
     url: https://en.wikipedia.org/wiki/Nathan_Rosen
 
+"Singh":
+  - firstname: ["Rahul"]
+    url: https://amirtag.github.io/
+
+
 "Bach": 
   - firstname: ["Johann Sebastian", "J. S."]
     url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
