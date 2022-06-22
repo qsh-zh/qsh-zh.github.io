@@ -8,6 +8,7 @@
 
 > Assume in starting docker with `jam-dk` and set up x-server correctly
 ```shell
+sudo apt-get install rubygems
 sudo gem install ruby
 sudo gem install bundler
 sudo apt-get update --fix-missing
