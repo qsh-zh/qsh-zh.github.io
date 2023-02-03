@@ -74,11 +74,20 @@
       </div>
 
       <div class="periodical">
-      {% if entry.type == "article" %}
-        <em>{{entry.journal}}</em>
-      {% elsif entry.type == "inproceedings" %}
-        <em>In {{entry.booktitle}}</em>
-      {% endif %}
+        {% if entry.additional %}
+            {% if entry.type == "article" %}
+            <em>{{entry.journal}},</em>
+            {% elsif entry.type == "inproceedings" %}
+            <em>In {{entry.booktitle}},</em>
+            {% endif %}
+            <b style="color:darkred">{{entry.additional}}.</b>
+        {% else %}
+            {% if entry.type == "article" %}
+            <em>{{entry.journal}}.</em>
+            {% elsif entry.type == "inproceedings" %}
+            <em>In {{entry.booktitle}}.</em>
+            {% endif %}
+        {% endif %}
       {% if entry.year %}
         {{entry.year}}
       {% endif %}
