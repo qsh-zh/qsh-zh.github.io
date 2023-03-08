@@ -21,7 +21,8 @@ I am a forth-year Robotics Ph.D. student at Georgia Institute of Technology [IRI
 Previously, I received my bachelar in 2019 from [Shanghai Jiaotong University](https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University), where I taught robots to [play soccer](https://www.youtube.com/watch?v=5_8HpaHlzyE&t=18s). 
 <!-- My teammates have a promising robotics [startup](https://www.seer-group.com/). -->
 
-I worked in probabilistic modeling in **high dimensional data** and applied the technique in various applications. More specially, the approach tackles the data (e.g. real images, feasible robots trajectories) as samples drawn from complex distributions and investigates **representation**, **learning** and **sampling** of underlying distributions.
+
+My work has focused on **probabilistic modeling of high-dimensional data**, and the application of this technique to various domains. Specifically, I approach data, such as real images and feasible robot trajectories, as samples drawn from complex distributions. I investigate the **representation**, **learning**, and **sampling** of the underlying distributions.
 
 My research interests include: 
 - Density models: learning and sampling.
