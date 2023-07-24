@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-1-30 15:59:00-0400
+date: 2023-1-30 15:59:00-0400
 inline: true
 ---
 
-I will spend my 2022 summer in NVIDIA Research.
+I will join Nvidia as a research scientist and continue working on NVIDIA AI Foundations, specifically [Picasso](https://www.nvidia.com/en-us/gpu-cloud/picasso/).
