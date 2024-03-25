@@ -16,7 +16,7 @@ social: false   # includes social icons at the bottom of the page
 ---
 
 <!-- Qinsheng Zhang (张钦圣 Zhāng qīn shèng) [sound](https://www.google.com/search?q=%E5%BC%A0%E9%92%A6%E5%9C%A3+google+translation&ei=is6yYrr8DLqgkPIPzby-4AU&ved=0ahUKEwi66bGAzsD4AhU6EEQIHU2eD1wQ4dUDCA0&uact=5&oq=%E5%BC%A0%E9%92%A6%E5%9C%A3+google+translation&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABMgUIIRCgAToHCAAQRxCwAzoGCCEQChAqOgkIIRAKEKABECo6BwghEAoQoAFKBAhBGABKBAhGGABQmAVYth5ggSBoAXABeAGAAaoCiAHwFpIBBjAuMTkuMZgBAKABAcgBCsABAQ&sclient=gws-wiz).  -->
-I am a forth-year Robotics Ph.D. student at Georgia Institute of Technology [IRIM](https://research.gatech.edu/robotics). I am fortunately advised by professor [Yongxin Chen](https://yongxin.ae.gatech.edu/). 
+I am a research scientist at [NVIDIA Deep Imagination Research Group](https://research.nvidia.com/labs/dir/). I received Ph.D. in Robotics from Georgia Institute of Technology [IRIM](https://research.gatech.edu/robotics) in 2023, fortunately advised by [Yongxin Chen](https://yongxin.ae.gatech.edu/). 
 
 Previously, I received my bachelar in 2019 from [Shanghai Jiaotong University](https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University), where I taught robots to [play soccer](https://www.youtube.com/watch?v=5_8HpaHlzyE&t=18s). 
 <!-- My teammates have a promising robotics [startup](https://www.seer-group.com/). -->
