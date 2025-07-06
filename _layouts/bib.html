@@ -81,7 +81,7 @@
                 and <span style="color: #B71C1C; font-weight: 600;">{{author.last}} {{show_first}}</span>
               {% else %}
                 {% if coauthor_url %}
-                  and <a href="{{coauthor_url}}" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px dashed #666;">{{author.last}} {{show_first}}</a>
+                  and <a href="{{coauthor_url}}" target="_blank" class="author-link">{{author.last}} {{show_first}}</a>
                 {% else %}
                   and {{author.last}} {{show_first}}
                 {% endif %}
@@ -206,3 +206,18 @@
     {% endif %}
   </div>
 </div>
+
+<style>
+.author-link {
+  color: #333 !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed #666;
+  transition: border-bottom-color 0.2s ease, color 0.2s ease;
+}
+
+.author-link:hover {
+  color: #111 !important;
+  border-bottom-color: #333;
+  text-decoration: none !important;
+}
+</style>
