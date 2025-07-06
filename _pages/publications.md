@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description: <span style="color:blue;font-weight:bold">#</span> denotes equal contribution.
 years: [2023,2022,2021,2020]
-nav: true
+nav: false
 ---
 
 An up-to-date list is available on [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=hKwlT6wAAAAJ).

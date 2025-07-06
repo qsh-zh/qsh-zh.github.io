@@ -2,17 +2,35 @@
 ---
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  {% if entry.abbr %}
-    {% if site.data.venues[entry.abbr] %}
-    <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a></abbr>
-    {% else %}
-    <abbr class="badge">{{entry.abbr}}</abbr>
+  <!-- Thumbnail column -->
+  <div class="col-sm-3 thumbnail-container">
+    {% if entry.thumbnail %}
+      {% assign thumbnail_url = entry.thumbnail %}
+      {% unless entry.thumbnail contains '://' %}
+        {% assign thumbnail_url = entry.thumbnail | prepend: '/assets/img/' | relative_url %}
+      {% endunless %}
+      
+      <div class="thumbnail-wrapper" style="position: relative; width: 100%; max-width: 180px; margin: 0 auto;">
+        <img src="{{ thumbnail_url }}" alt="{{entry.title}} thumbnail" 
+             class="img-fluid rounded shadow-sm" 
+             style="width: 100%; height: auto; max-height: 140px; object-fit: contain; border: 1px solid #e9ecef;">
+      </div>
     {% endif %}
-  {% endif %}
+    
+    <!-- Abbreviation badge positioned below thumbnail -->
+    {% if entry.abbr %}
+      <div class="text-center mt-2">
+        {% if site.data.venues[entry.abbr] %}
+        <abbr class="badge badge-primary"><a href="{{site.data.venues[entry.abbr].url}}" target="_blank" style="color: white; text-decoration: none;">{{entry.abbr}}</a></abbr>
+        {% else %}
+        <abbr class="badge badge-secondary">{{entry.abbr}}</abbr>
+        {% endif %}
+      </div>
+    {% endif %}
   </div>
 
-  <div id="{{entry.key}}" class="col-sm-8">
+  <!-- Main content column -->
+  <div id="{{entry.key}}" class="col-sm-9">
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
@@ -43,27 +61,27 @@
           
           {% if forloop.length == 1 %}
             {% if author_is_self %}
-              <em>{{author.last}} {{show_first}}</em>
+              <span style="color: #B71C1C; font-weight: 600;">{{author.last}} {{show_first}}</span>
             {% else %}
               {{author.last}} {{show_first}}
             {% endif %}
           {% else %}
             {% unless forloop.last %}
               {% if author_is_self %}
-                  <em>{{author.last}} {{show_first}}</em>,
+                  <span style="color: #B71C1C; font-weight: 600;">{{author.last}} {{show_first}}</span>,
               {% else %}
                 {% if coauthor_url %}
-                  <a href="{{coauthor_url}}" target="_blank">{{author.last}} {{show_first}}</a>,
+                  <a href="{{coauthor_url}}" target="_blank" class="author-link">{{author.last}} {{show_first}}</a>,
                 {% else %}
                   {{author.last}} {{show_first}},
                 {% endif %}
               {% endif %}
             {% else %}
               {% if author_is_self %}
-                and <em>{{author.last}} {{show_first}}</em>
+                and <span style="color: #B71C1C; font-weight: 600;">{{author.last}} {{show_first}}</span>
               {% else %}
                 {% if coauthor_url %}
-                  and <a href="{{coauthor_url}}" target="_blank">{{author.last}} {{show_first}}</a>
+                  and <a href="{{coauthor_url}}" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px dashed #666;">{{author.last}} {{show_first}}</a>
                 {% else %}
                   and {{author.last}} {{show_first}}
                 {% endif %}
@@ -71,6 +89,11 @@
             {% endunless %}
           {% endif %}
         {% endfor %}
+        {% if entry.note %}
+          <span style="color: #B71C1C; font-weight: 500; margin-left: 8px; font-style: italic;">
+            ({{ entry.note }})
+          </span>
+        {% endif %}
       </div>
 
       <div class="periodical">
@@ -92,6 +115,17 @@
         {{entry.year}}
       {% endif %}
       </div>
+
+            <!-- Impact/Contribution note -->
+      {% if entry.impact %}
+      <div class="impact-note">
+        <div style="margin-top: 12px; padding: 10px 14px; background: linear-gradient(135deg, #fdf2f2 0%, #f8d7da 100%); border: 1px solid #f5c6cb; border-radius: 8px; box-shadow: 0 2px 4px rgba(183,28,28,0.1);">
+          <p style="color: #721c24; font-weight: 500; margin: 0; font-size: 0.9em; line-height: 1.4;">
+            <span style="color: #B71C1C; font-weight: 600;">🎯</span> {{ entry.impact }}
+          </p>
+        </div>
+      </div>
+      {% endif %}
     {% endif %}
 
     <div class="links">
@@ -143,6 +177,17 @@
     {% endif %}
     {% if entry.website %}
       <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+    {% endif %}
+    
+    <!-- Custom links support -->
+    {% if entry.custom_link1 %}
+      <a href="{{ entry.custom_link1 }}" class="btn btn-sm z-depth-0" role="button" target="_blank">{{ entry.custom_link1_text | default: "Custom Link" }}</a>
+    {% endif %}
+    {% if entry.custom_link2 %}
+      <a href="{{ entry.custom_link2 }}" class="btn btn-sm z-depth-0" role="button" target="_blank">{{ entry.custom_link2_text | default: "Custom Link 2" }}</a>
+    {% endif %}
+    {% if entry.custom_link3 %}
+      <a href="{{ entry.custom_link3 }}" class="btn btn-sm z-depth-0" role="button" target="_blank">{{ entry.custom_link3_text | default: "Custom Link 3" }}</a>
     {% endif %}
     </div>
 

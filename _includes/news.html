@@ -1,24 +1,121 @@
 <div class="news">
-  <h2>news</h2>
-  {% if site.news  %}
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
+  <div class="news-header">
+    <h2>news</h2>
+    {% if site.news.size > site.news_limit %}
+      <a href="/news/" class="see-all-news">see all news →</a>
+    {% endif %}
+  </div>
+  
+  {% if site.news %}
+    <div class="news-list">
       {% assign news = site.news | reverse %}
       {% for item in news limit: site.news_limit %}
-        <tr>
-          <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
-          <td>
+        <div class="news-item">
+          <span class="news-date">{{ item.date | date: "%b %-d, %Y" }}</span>
+          <div class="news-content">
             {% if item.inline %}
               {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
             {% else %}
-              <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              <a class="news-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
             {% endif %}
-          </td>
-        </tr>
+          </div>
+        </div>
       {% endfor %}
-      </table>
     </div>
   {% else %}
     <p>No news so far...</p>
   {% endif %}
 </div>
+
+<style>
+.news {
+  margin: 1.5rem 0;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.news-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.see-all-news {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.see-all-news:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  color: #666;
+  font-size: 0.9rem;
+  min-width: 90px;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.news-content {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.news-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.news-link:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .news-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .news-item {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .news-date {
+    min-width: auto;
+    font-size: 0.8rem;
+  }
+}
+</style>
