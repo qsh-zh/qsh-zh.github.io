@@ -41,21 +41,46 @@ This website serves as a professional portfolio and academic presence for Qinshe
 4. **View the website:**
    Open your browser and go to `http://localhost:4000`
 
-### Docker Development (Alternative)
+### Docker Development (Recommended)
 
-If you prefer using Docker:
+Using Docker provides a consistent development environment:
 
-1. **Build and run with Docker:**
+#### Option 1: Docker Compose (Easiest)
+
+1. **Build and start the development server:**
    ```bash
-   docker run --rm -it -p 4000:4000 -v $(pwd):/srv/jekyll jekyll/jekyll:latest bash
-   docker run -it --rm --name web --mount type=bind,source=/etc/passwd,target=/etc/passwd,readonly --mount type=bind,source=/etc/group,target=/etc/group,readonly -u $(id -u $USER):$(id -g $USER) -p 4001:4001 -v $(pwd):/home/dev ubuntu /bin/bash
+   docker-compose up
    ```
 
-2. **Inside the container:**
+2. **View the website:**
+   Open your browser and go to `http://localhost:4000`
+
+3. **Stop the server:**
    ```bash
-   bundle install
-   bundle exec jekyll serve --host 0.0.0.0
+   docker-compose down
    ```
+
+#### Option 2: Docker Only
+
+1. **Build the Docker image:**
+   ```bash
+   docker build -t jekyll-site .
+   ```
+
+2. **Run the development server:**
+   ```bash
+   docker run --rm -it -p 4000:4000 -p 35729:35729 -v $(pwd):/srv/jekyll jekyll-site
+   ```
+
+3. **For production build:**
+   ```bash
+   docker run --rm -v $(pwd):/srv/jekyll jekyll-site bundle exec jekyll build
+   ```
+
+#### Features
+- **Live reload**: Changes to files automatically refresh the browser
+- **Volume mounting**: Your local files are synced with the container
+- **Consistent environment**: Same Ruby version and dependencies everywhere
 
 ## Deployment
 
@@ -170,20 +195,48 @@ For issues or questions:
 
 - [ ] Add a news seperate page, like blogs. 
 
-## Run in docker
+## Docker Troubleshooting
 
-> Assume in starting docker with `jam-dk` and set up x-server correctly
+### Common Docker Issues
+
+1. **Port already in use:**
+   ```bash
+   # Kill any process using port 4000
+   sudo lsof -t -i:4000 | xargs kill -9
+   ```
+
+2. **Permission issues with volume mounting:**
+   ```bash
+   # Fix ownership issues
+   docker-compose run --rm jekyll chown -R $(id -u):$(id -g) /srv/jekyll
+   ```
+
+3. **Bundle install issues:**
+   ```bash
+   # Clean and rebuild
+   docker-compose down
+   docker system prune -f
+   docker-compose build --no-cache
+   ```
+
+4. **Live reload not working:**
+   - Ensure both ports 4000 and 35729 are exposed
+   - Check if your firewall is blocking the ports
+   - Use `--force_polling` flag for file system watching issues
+
+### Alternative: Manual Docker Setup
+
+If you prefer manual control or are having issues with the above methods:
+
 ```shell
-sudo apt-get install rubygems
-sudo gem install ruby
-sudo gem install bundler
-sudo apt-get update --fix-missing
-sudo apt install ruby2.7-dev # missing can cause error
+# Install dependencies inside container
+docker run --rm -it -v $(pwd):/srv/jekyll -w /srv/jekyll ruby:3.1-slim bash
+apt-get update && apt-get install -y build-essential git
 bundle install
-jekyll serve
+bundle exec jekyll serve --host 0.0.0.0
 ```
 
-Useful command also contained in `bin/deploy`
+Useful commands are also contained in `bin/deploy`
 ## Reference and Resources
 
 - The site is based on [al-folio commit](https://github.com/alshedivat/al-folio/tree/895063a6251cf8ec553064748db68398456a800f)
