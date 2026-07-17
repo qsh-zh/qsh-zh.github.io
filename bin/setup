@@ -1,7 +1,0 @@
-#!/bin/bash
-
-sudo gem install ruby
-sudo gem install bundler
-sudo apt-get update --fix-missing
-sudo apt install ruby2.7-dev # missing can cause error
-bundle install

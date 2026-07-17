@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Qinsheng  Zhang
+
+
+</title>
+<meta name="description" content="Qinsheng's website
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍🎓</text></svg>">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="/">
+
+<!-- JQuery -->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+<!-- Theming-->
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HS8QHVBJLJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-HS8QHVBJLJ');
+</script>
+
+
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+    <style>
+      .custom-header {
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 0.1rem 0;
+        margin-bottom: 2rem;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        width: 100%;
+      }
+      
+      .name-and-contacts {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      
+      .name-section {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+        margin-right: 0.75rem;
+        white-space: nowrap;
+      }
+      
+      .contact-icons {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      
+      .contact-icons a {
+        color: #666;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+        padding: 0.25rem;
+        display: flex;
+        align-items: center;
+      }
+      
+      .contact-icons a:hover {
+        color: #333;
+      }
+      
+      .nav-section {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+      
+      .nav-section a {
+        color: #666;
+        text-decoration: none;
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+      }
+      
+      .nav-section a:hover {
+        background-color: #f5f5f5;
+        color: #333;
+      }
+      
+      .nav-section a.active {
+        background-color: #e3f2fd;
+        color: #1976d2;
+      }
+      
+      .main-content {
+        padding-top: 1rem;
+      }
+      
+      /* Remove the default body padding that was for the original header */
+      body {
+        padding-top: 0 !important;
+      }
+      
+              @media (max-width: 768px) {
+          .custom-header {
+            padding: 0.1rem 0;
+            min-height: 50px;
+          }
+        
+        .header-content {
+          flex-direction: column;
+          gap: 0.5rem;
+          padding: 0 1rem;
+        }
+        
+        .name-and-contacts {
+          flex-direction: column;
+          text-align: center;
+          gap: 0.5rem;
+        }
+        
+        .name-section {
+          font-size: 1.1rem;
+          margin-right: 0;
+        }
+        
+        .nav-section {
+          gap: 0.5rem;
+        }
+        
+        .nav-section a {
+          padding: 0.3rem 0.6rem;
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <!-- Original Header (hidden on about page) -->
+    <div style="display: none;">
+      <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/">
+              about
+              
+                <span class="sr-only">(current)</span>
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+    </div>
+
+    <!-- Custom Header for About Page -->
+    <div class="custom-header">
+      <div class="header-content">
+        <!-- Left side: Name and Contact Icons -->
+        <div class="name-and-contacts">
+          <div class="name-section">
+            Qinsheng  Zhang
+          </div>
+          <div class="contact-icons">
+            <a rel="noopener" href="https://scholar.google.com/citations?user=hKwlT6wAAAAJ&hl=en" target="_blank" title="Google Scholar">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+            <a rel="noopener" href="https://github.com/qsh-zh" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a rel="noopener" href="https://twitter.com/qsh_zh" target="_blank" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Right side: Original Navigation -->
+        <div class="nav-section">
+          <a href="/" class="active">about</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <div class="post">
+        <article class="main-content">
+          
+          <div class="profile float-right">
+            
+              <img class="img-fluid z-depth-1 rounded" src="/assets/img/web.jpg">
+            
+            
+              <div class="address">
+                <p>An explorer from <a href="https://en.wikipedia.org/wiki/Quzhou">Quzhou</a></p>
+
+              </div>
+            
+          </div>
+          
+
+          <div class="clearfix" style="text-align:left;margin-top:1rem;">
+            <p>I am a senior research scientist at <a href="https://research.nvidia.com/labs/dir/">NVIDIA Deep Imagination Research Group</a>, where I work on probabilistic modeling of high-dimensional data. Right now, I’m leading our world-model training efforts.</p>
+
+<p>Prior to joining NVIDIA, I was:</p>
+
+<ul>
+  <li>Ph.D. in Robotics from Georgia Institute of Technology <a href="https://research.gatech.edu/robotics">IRIM</a> in 2023, advised by <a href="https://yongxin.ae.gatech.edu/">Yongxin Chen</a></li>
+  <li>Bachelor’s degree from <a href="https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University">Shanghai Jiaotong University</a> in 2019, where I taught robots to <a href="https://www.youtube.com/watch?v=5_8HpaHlzyE&amp;t=18s">play soccer and even won a Robo WORLDCUP!</a></li>
+</ul>
+
+<p>My “generative AI” qualifications:</p>
+
+<ul>
+  <li>I lead NVIDIA’s large-scale diffusion model training. From <span class="expandable-details"><span class="expandable-trigger" tabindex="0">infra ⚡</span><span class="expandable-content">implementing <a href="https://github.com/qsh-zh/easy_io">efficient file I/O</a>, designing parallel strategies, hunting down the one buggy/slow GPU among 10 000 🤕</span></span> to ablating models and babysitting training runs. We delivered and open-sourced <a href="https://github.com/nvidia-cosmos/cosmos-predict2">COSMOS world models</a> and shipped closed-source <a href="https://www.google.com/search?tbm=nws&amp;q=nvidia+picasso">Picasso in NVIDIA AI Foundations</a> (and, after two years, a <a href="https://arxiv.org/abs/2411.07126">tech report</a> finally saw the light).</li>
+  <li>I co-authored <a href="https://qsh-zh.github.io/deis/">DEIS</a>, the first to introduce exponential integrators for diffusion sampling—cutting sampling steps down to 10–15.</li>
+  <li>I democratized using generative diffusion models for sampling unnormalized probability densities (e.g., amortized molecular conformer generation) in <a href="https://arxiv.org/abs/2111.15141">this paper</a>.</li>
+</ul>
+
+<p>In general, my research approach centers on the <strong>representation</strong>, <strong>learning</strong>, and <strong>sampling</strong> of complex probability distributions.</p>
+
+<p><strong>Email</strong>: qsh.zh27 [at] gmail [dot] com</p>
+
+
+          </div>
+
+          
+            <hr>
+            <div class="news">
+  <div class="news-header">
+    <h2>news</h2>
+    
+      <a href="/news/" class="see-all-news">see all news →</a>
+    
+  </div>
+  
+  
+    <div class="news-list">
+      
+      
+        <div class="news-item">
+          <span class="news-date">Jul 1, 2025</span>
+          <div class="news-content">
+            
+              <a href="https://github.com/nvidia-cosmos/cosmos-predict2">Cosmos Predict2</a> release! SOTA world model for AV driving and robots.
+
+            
+          </div>
+        </div>
+      
+        <div class="news-item">
+          <span class="news-date">Jan 11, 2025</span>
+          <div class="news-content">
+            
+              <a href="https://github.com/NVIDIA/Cosmos">Cosmos Predict1</a> release! First open source large scale world model
+
+            
+          </div>
+        </div>
+      
+        <div class="news-item">
+          <span class="news-date">Dec 1, 2023</span>
+          <div class="news-content">
+            
+              Graduated from <a href="https://yongxin.ae.gatech.edu/">GaTech</a> and joined Nvidia as a research scientist working on NVIDIA GenAI, specifically <a href="https://www.nvidia.com/en-us/gpu-cloud/picasso/">Picasso</a>.
+
+            
+          </div>
+        </div>
+      
+        <div class="news-item">
+          <span class="news-date">May 16, 2022</span>
+          <div class="news-content">
+            
+              ICML22 <a href="https://arxiv.org/abs/2112.02424">Wasserstein gradient flow</a> in pixel space!
+
+            
+          </div>
+        </div>
+      
+        <div class="news-item">
+          <span class="news-date">Apr 30, 2022</span>
+          <div class="news-content">
+            
+              <strong>Training Free</strong> <a href="https://qsh-zh.github.io/deis/">DEIS</a> 10 steps to generate high-fidelity samples for diffusion model.
+
+            
+          </div>
+        </div>
+      
+    </div>
+  
+</div>
+
+<style>
+.news {
+  margin: 1.5rem 0;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.news-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.see-all-news {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.see-all-news:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  color: #666;
+  font-size: 0.9rem;
+  min-width: 90px;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.news-content {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.news-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.news-link:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .news-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .news-item {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .news-date {
+    min-width: auto;
+    font-size: 0.8rem;
+  }
+}
+</style>
+
+          
+
+          
+            <div id="publications">
+              <div class="publications">
+  <div class="publications-header">
+    <h2>Selected publications</h2>
+    <a href="https://scholar.google.com/citations?user=hKwlT6wAAAAJ&hl=en" target="_blank" class="see-all-publications">See Google Scholar for the full list of publications →</a>
+  </div>
+  <ol class="bibliography"><li><div class="row">
+  <!-- Thumbnail column -->
+  <div class="col-sm-3 thumbnail-container">
+    
+      
+      
+      
+      <div class="thumbnail-wrapper" style="position: relative; width: 100%; max-width: 180px; margin: 0 auto;">
+        <img src="/assets/img/Cosmos1_teaser.gif" alt="Cosmos World Foundation Model Platform for Physical AI thumbnail" 
+             class="img-fluid rounded shadow-sm" 
+             style="width: 100%; height: auto; max-height: 140px; object-fit: contain; border: 1px solid #e9ecef;">
+      </div>
+    
+    
+    <!-- Abbreviation badge positioned below thumbnail -->
+    
+  </div>
+
+  <!-- Main content column -->
+  <div id="nvidia2025cosmosworldfoundationmodel" class="col-sm-9">
+    
+      <div class="title">Cosmos World Foundation Model Platform for Physical AI</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              NVIDIA 
+            
+          
+        
+        
+          <span style="color: #B71C1C; font-weight: 500; margin-left: 8px; font-style: italic;">
+            (led the model training and development)
+          </span>
+        
+      </div>
+
+      <div class="periodical">
+        
+            
+            <em>Whitepaper.</em>
+            
+        
+      
+        2025
+      
+      </div>
+
+            <!-- Impact/Contribution note -->
+      
+      <div class="impact-note">
+        <div style="margin-top: 12px; padding: 10px 14px; background: linear-gradient(135deg, #fdf2f2 0%, #f8d7da 100%); border: 1px solid #f5c6cb; border-radius: 8px; box-shadow: 0 2px 4px rgba(183,28,28,0.1);">
+          <p style="color: #721c24; font-weight: 500; margin: 0; font-size: 0.9em; line-height: 1.4;">
+            <span style="color: #B71C1C; font-weight: 600;">🎯</span> NVIDIA’s open-source video world model platform
+          </p>
+        </div>
+      </div>
+      
+    
+
+    <div class="links">
+    
+    
+    
+    
+    
+      
+      <a href="https://arxiv.org/abs/2501.03575" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+      <a href="https://github.com/NVIDIA/Cosmos" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+      <a href="https://research.nvidia.com/labs/dir/cosmos-predict1/" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+    
+    
+    <!-- Custom links support -->
+    
+      <a href="https://www.youtube.com/live/k82RwXqZHY8?t=3303s" class="btn btn-sm z-depth-0" role="button" target="_blank">Jensen Huang Keynote at CES 2025</a>
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+  </div>
+</div>
+
+<style>
+.author-link {
+  color: #333 !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed #666;
+  transition: border-bottom-color 0.2s ease, color 0.2s ease;
+}
+
+.author-link:hover {
+  color: #111 !important;
+  border-bottom-color: #333;
+  text-decoration: none !important;
+}
+</style>
+</li>
+<li><div class="row">
+  <!-- Thumbnail column -->
+  <div class="col-sm-3 thumbnail-container">
+    
+      
+      
+      
+      <div class="thumbnail-wrapper" style="position: relative; width: 100%; max-width: 180px; margin: 0 auto;">
+        <img src="/assets/img/new_mdm_1.jpg" alt="Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling thumbnail" 
+             class="img-fluid rounded shadow-sm" 
+             style="width: 100%; height: auto; max-height: 140px; object-fit: contain; border: 1px solid #e9ecef;">
+      </div>
+    
+    
+    <!-- Abbreviation badge positioned below thumbnail -->
+    
+      <div class="text-center mt-2">
+        
+        <abbr class="badge badge-secondary">ICLR</abbr>
+        
+      </div>
+    
+  </div>
+
+  <!-- Main content column -->
+  <div id="zheng2025masked" class="col-sm-9">
+    
+      <div class="title">Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Zheng Kaiwen,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://yongxin.ae.gatech.edu/" target="_blank" class="author-link">Chen Yongxin</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Mao Hanzi,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+            
+          
+          
+          
+            
+              
+                
+                  Liu Ming-Yu,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Zhu Jun,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                and <span style="color: #B71C1C; font-weight: 600;">Zhang Qinsheng</span>
+              
+            
+          
+        
+        
+      </div>
+
+      <div class="periodical">
+        
+            
+            <em>In International Conference on Learning Representations.</em>
+            
+        
+      
+        2025
+      
+      </div>
+
+            <!-- Impact/Contribution note -->
+      
+      <div class="impact-note">
+        <div style="margin-top: 12px; padding: 10px 14px; background: linear-gradient(135deg, #fdf2f2 0%, #f8d7da 100%); border: 1px solid #f5c6cb; border-radius: 8px; box-shadow: 0 2px 4px rgba(183,28,28,0.1);">
+          <p style="color: #721c24; font-weight: 500; margin: 0; font-size: 0.9em; line-height: 1.4;">
+            <span style="color: #B71C1C; font-weight: 600;">🎯</span> mask diffusion model; numerical issue; faster sampling
+          </p>
+        </div>
+      </div>
+      
+    
+
+    <div class="links">
+    
+    
+    
+    
+    
+      
+      <a href="https://openreview.net/forum?id=CTC7CmirNr" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+    
+    
+    
+      <a href="https://research.nvidia.com/labs/dir/mdm-equal-mm/" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+    
+    
+    <!-- Custom links support -->
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+  </div>
+</div>
+
+<style>
+.author-link {
+  color: #333 !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed #666;
+  transition: border-bottom-color 0.2s ease, color 0.2s ease;
+}
+
+.author-link:hover {
+  color: #111 !important;
+  border-bottom-color: #333;
+  text-decoration: none !important;
+}
+</style>
+</li>
+<li><div class="row">
+  <!-- Thumbnail column -->
+  <div class="col-sm-3 thumbnail-container">
+    
+      
+      
+      
+      <div class="thumbnail-wrapper" style="position: relative; width: 100%; max-width: 180px; margin: 0 auto;">
+        <img src="/assets/img/deis_website_teaser.jpg" alt="Fast Sampling of Diffusion Models with Exponential Integrator thumbnail" 
+             class="img-fluid rounded shadow-sm" 
+             style="width: 100%; height: auto; max-height: 140px; object-fit: contain; border: 1px solid #e9ecef;">
+      </div>
+    
+    
+    <!-- Abbreviation badge positioned below thumbnail -->
+    
+      <div class="text-center mt-2">
+        
+        <abbr class="badge badge-secondary">ICLR</abbr>
+        
+      </div>
+    
+  </div>
+
+  <!-- Main content column -->
+  <div id="zhang2022fast" class="col-sm-9">
+    
+      <div class="title">Fast Sampling of Diffusion Models with Exponential Integrator</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                  <span style="color: #B71C1C; font-weight: 600;">Zhang Qinsheng</span>,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://yongxin.ae.gatech.edu/" target="_blank" class="author-link">Chen Yongxin</a>
+                
+              
+            
+          
+        
+        
+      </div>
+
+      <div class="periodical">
+        
+            
+            <em>In International Conference on Learning Representations.</em>
+            
+        
+      
+        2023
+      
+      </div>
+
+            <!-- Impact/Contribution note -->
+      
+      <div class="impact-note">
+        <div style="margin-top: 12px; padding: 10px 14px; background: linear-gradient(135deg, #fdf2f2 0%, #f8d7da 100%); border: 1px solid #f5c6cb; border-radius: 8px; box-shadow: 0 2px 4px rgba(183,28,28,0.1);">
+          <p style="color: #721c24; font-weight: 500; margin: 0; font-size: 0.9em; line-height: 1.4;">
+            <span style="color: #B71C1C; font-weight: 600;">🎯</span> exponential integrator for diffusion sampling; sampling with 10-15 steps
+          </p>
+        </div>
+      </div>
+      
+    
+
+    <div class="links">
+    
+    
+      <a href="http://arxiv.org/abs/2204.13902" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+    
+    
+    
+      <a href="https://openreview.net/forum?id=Loek7hfb46P" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://github.com/qsh-zh/deis.git" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+      <a href="https://qsh-zh.github.io/deis/" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+    
+    
+    <!-- Custom links support -->
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+  </div>
+</div>
+
+<style>
+.author-link {
+  color: #333 !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed #666;
+  transition: border-bottom-color 0.2s ease, color 0.2s ease;
+}
+
+.author-link:hover {
+  color: #111 !important;
+  border-bottom-color: #333;
+  text-decoration: none !important;
+}
+</style>
+</li>
+<li><div class="row">
+  <!-- Thumbnail column -->
+  <div class="col-sm-3 thumbnail-container">
+    
+      
+      
+      
+      <div class="thumbnail-wrapper" style="position: relative; width: 100%; max-width: 180px; margin: 0 auto;">
+        <img src="/assets/img/ediffi_thumbnail.jpg" alt="ediffi: Text-to-image diffusion models with an ensemble of expert denoisers thumbnail" 
+             class="img-fluid rounded shadow-sm" 
+             style="width: 100%; height: auto; max-height: 140px; object-fit: contain; border: 1px solid #e9ecef;">
+      </div>
+    
+    
+    <!-- Abbreviation badge positioned below thumbnail -->
+    
+  </div>
+
+  <!-- Main content column -->
+  <div id="balaji2022ediffi" class="col-sm-9">
+    
+      <div class="title">ediffi: Text-to-image diffusion models with an ensemble of expert denoisers</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Balaji Yogesh,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Nah Seungjun,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://xunhuang.me/" target="_blank" class="author-link">Huang Xun</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Vahdat Arash,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://tsong.me/" target="_blank" class="author-link">Song Jiaming</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                  <span style="color: #B71C1C; font-weight: 600;">Zhang Qinsheng</span>,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Kreis Karsten,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Aittala Miika,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Aila Timo,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Laine Samuli,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Catanzaro Bryan,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and others 
+                
+              
+            
+          
+        
+        
+      </div>
+
+      <div class="periodical">
+        
+            
+            <em>Whitepaper.</em>
+            
+        
+      
+        2022
+      
+      </div>
+
+            <!-- Impact/Contribution note -->
+      
+      <div class="impact-note">
+        <div style="margin-top: 12px; padding: 10px 14px; background: linear-gradient(135deg, #fdf2f2 0%, #f8d7da 100%); border: 1px solid #f5c6cb; border-radius: 8px; box-shadow: 0 2px 4px rgba(183,28,28,0.1);">
+          <p style="color: #721c24; font-weight: 500; margin: 0; font-size: 0.9em; line-height: 1.4;">
+            <span style="color: #B71C1C; font-weight: 600;">🎯</span> NVIDIA’s text-to-image foundation models
+          </p>
+        </div>
+      </div>
+      
+    
+
+    <div class="links">
+    
+    
+      <a href="http://arxiv.org/abs/2211.01324" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="https://deepimagination.cc/eDiff-I/" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+    
+    
+    <!-- Custom links support -->
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+  </div>
+</div>
+
+<style>
+.author-link {
+  color: #333 !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed #666;
+  transition: border-bottom-color 0.2s ease, color 0.2s ease;
+}
+
+.author-link:hover {
+  color: #111 !important;
+  border-bottom-color: #333;
+  text-decoration: none !important;
+}
+</style>
+</li></ol>
+</div>
+
+<style>
+.publications {
+  margin: 1.5rem 0;
+}
+
+.publications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.publications-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.see-all-publications {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.see-all-publications:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .publications-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+</style>
+
+            </div>
+          
+
+          <!-- Student Mentees and Collaborators Section -->
+          <div style="margin-top: 2rem;">
+            <hr>
+            <h3>Student Mentees and Collaborators</h3>
+            <p>I have been fortunate to work with many talented students and collaborators throughout my research journey</p>
+            <ul style="list-style-type: none; padding-left: 0;">
+              <li style="margin-bottom: 15px; line-height: 1.6;">
+                <strong><a href="https://scholar.google.com/citations?hl=en&user=0d80xSIAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" style="color: #333; text-decoration: none;">Kaiwen Zhen</a></strong> 
+                <span style="color: #666; font-style: italic;">(Tsinghua)</span> — 
+                <a href="https://research.nvidia.com/labs/dir/mdm-equal-mm/" target="_blank" style="color: #8B0000; text-decoration: none;">Discrete Diffusion Models</a>, 
+                <a href="https://arxiv.org/abs/2503.01103" target="_blank" style="color: #8B0000; text-decoration: none;">Direct Discriminative Optimization</a>
+              </li>
+              <li style="margin-bottom: 15px; line-height: 1.6;">
+                <strong><a href="https://me.kiui.moe/" target="_blank" style="color: #333; text-decoration: none;">Jiaxiang Tang</a></strong> 
+                <span style="color: #666; font-style: italic;">(PKU, now at Nvidia)</span> — 
+                <a href="https://github.com/NVlabs/EdgeRunner" target="_blank" style="color: #8B0000; text-decoration: none;">EdgeRunner</a>
+              </li>
+              <li style="margin-bottom: 15px; line-height: 1.6;">
+                <strong><a href="https://alihassanijr.com/" target="_blank" style="color: #333; text-decoration: none;">Ali Hassani</a></strong> 
+                <span style="color: #666; font-style: italic;">(GaTech, now at Nvidia)</span> — 
+                <a href="https://x.com/qsh_zh/status/1943945985019064717" target="_blank" style="color: #8B0000; text-decoration: none;">Sparse Attention for Video Model</a>
+              </li>
+            </ul>
+          </div>
+
+        </article>
+      </div>
+    </div>
+
+    <!-- No Footer for About Page -->
+
+  </body>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+</html>
