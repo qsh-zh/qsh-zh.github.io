@@ -20,7 +20,7 @@ I am a senior research scientist at [NVIDIA Deep Imagination Research Group](htt
 Prior to joining NVIDIA, I was:
 
 
-- [Ph.D.](../assets/pdf/phd_thesis.pdf) in Robotics from Georgia Institute of Technology [IRIM](https://research.gatech.edu/robotics) in 2023, advised by [Yongxin Chen](https://yongxin.ae.gatech.edu/)
+- Ph.D. in Robotics from Georgia Institute of Technology [IRIM](https://research.gatech.edu/robotics) in 2023, advised by [Yongxin Chen](https://yongxin.ae.gatech.edu/)
 - Bachelor's degree from [Shanghai Jiaotong University](https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University) in 2019, where I taught robots to [play soccer and even won a Robo WORLDCUP!](https://www.youtube.com/watch?v=5_8HpaHlzyE&t=18s)
 
 
